@@ -1,0 +1,1 @@
+<img src="{{ asset('images/library_logo.png') }}" class="w-12">
