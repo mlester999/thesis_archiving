@@ -6,6 +6,8 @@
 
         <title>PNC Library</title>
 
+        <link rel="shortcut icon" href="{{ asset('images/library_icon.ico') }}">
+
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,12 +30,12 @@
             @if (Route::has('login'))
                 <div class="hidden absolute top-0 right-0 p-8 sm:block">
                     @auth
-                        <a href="{{ url('/dashboard') }}" class="my-8 text-xl text-gray-700 dark:text-slate-100">Dashboard</a>
+                        <a href="{{ url('/dashboard') }}" class="my-8 text-xl text-gray-700 dark:text-slate-100 hover:text-slate-300">Dashboard</a>
                     @else
-                        <a href="{{ route('login') }}" class="my-8 text-xl text-gray-700 dark:text-slate-100">Log in</a>
+                        <a href="{{ route('login') }}" class="my-8 text-xl text-gray-700 dark:text-slate-100 hover:text-slate-300">Log in</a>
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-6 text-xl text-gray-700 dark:text-slate-100">Register</a>
+                            <a href="{{ route('register') }}" class="ml-6 text-xl text-gray-700 dark:text-slate-100 hover:text-slate-300">Register</a>
                         @endif
                     @endauth
                 </div>
